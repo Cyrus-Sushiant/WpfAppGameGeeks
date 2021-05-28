@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfAppGameGeeks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppGameGeeks"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600">
+    <Grid x:Name="MainGrid">
+        <Label Width="80" Height="80" Background="Green" FontWeight="Bold" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Japanese" Name="lblJapanese" HorizontalAlignment="Left" VerticalAlignment="Top"></Label>
+        <Label Width="80" Height="80" Background="Green" FontWeight="Bold" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Chinese" Name="lblChinese" HorizontalAlignment="Right" VerticalAlignment="Top"></Label>
+        <Label Width="80" Height="80" Background="Green" FontWeight="Bold" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Korean" Name="lblKorean" HorizontalAlignment="Right" VerticalAlignment="Bottom"></Label>
+        <Label Width="80" Height="80" Background="Green" FontWeight="Bold" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Thai" Name="lblThai" HorizontalAlignment="Left" VerticalAlignment="Bottom"></Label>
+        <Label Width="200" Height="40" Background="Red" FontWeight="Bold" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Score: 0" Name="lblScore" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Hidden"></Label>
+
+        <Button Name="btnStart" Content="Start" Height="22" Width="76" VerticalAlignment="Center" HorizontalAlignment="Center"
+                Click="btnStart_Click" />
+        <Image Name="img" Stretch="Fill" Width="110" Height="100"  VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Hidden"
+                MouseLeftButtonUp="img_MouseLeftButtonUp" MouseLeftButtonDown="img_MouseLeftButtonDown" MouseMove="img_MouseMove" />
+    </Grid>
+</Window>
